@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/spectre.css/dist/spectre.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"
+  />
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ben Medcalf</title>
+
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- TODO: Move this to its own file. Propery host static files using Oak -->
+    <style>
+      body {
+        font-family: monospace;
+      }
+
+      .main {
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+      }
+
+      .dropdown {
+        display: inline-block;
+        position: relative;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        width: 100%;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown-content a {
+        display: block;
+        color: #000000;
+        width: fit-content;
+        border: 1px solid;
+        border-color: black;
+        background-color: #FFFFFF;
+        text-decoration: none;
+      }
+      .dropdown-content a:hover {
+        color: #FFFFFF;
+        background-color: #00A4BD;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="main">
+
+      <h1>Ben Medcalf</h1>
+
+      <div class="navbar-center navbar-section">
+
+        <a href="http://github.com/manbradcalf" class="p-2 navbar-item">Github</a>
+        <a href="https://www.linkedin.com/in/ben-medcalf/" class="p-2 navbar-item">LinkedIn</a>
+        <a href="http://instagram.com/manbradcalf" class="p-2 navbar-item">Instagram</a>
+        <a href="mailto:ben.medcalf@gmail.com" class="p-2 navbar-item">Contact</a>
+
+        <div class="p-2 dropdown navbar-item">
+          <a class="p-2">Bands</a>
+          <div class="dropdown-content">
+            <a href="http://buddylist.bandcamp.com" class="p-2">Buddy List</a>
+            <a href="https://youngscum.bandcamp.com" class="p-2">Young Scum</a>
+          </div>
+        </div>
+
+        <div class="p-2 dropdown navbar-item">
+          <a class="p-2">Projects</a>
+          <div class="dropdown-content">
+            <a href="http://artiediy.org" class="p-2">Artie</a>
+            <a href="https://play.google.com/store/apps/details?id=com.bookyrself.bookyrself&pli=1" class="p-2">Artie - Android App</a>
+            <a href="" class="p-2">MTG Collection Tracker</a>
+            <a href="https://rpdtwitbot.azurewebsites.net/" class="p-2">RPD Twitter Bot</a>
+          </div>
+        </div>
+
+      <img
+        src="https://avatars.githubusercontent.com/u/11594171?v=4"
+        alt="Picture of Ben"
+        class="img-responsive"
+      />
+
+    </div>
+
+  </body>
+
+</html>
