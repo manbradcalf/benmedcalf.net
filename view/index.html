@@ -1,17 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/spectre.css/dist/spectre.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"
-  />
 
   <head>
     <meta charset="utf-8" />
@@ -53,6 +41,7 @@
       .dropdown {
         display: inline-block;
         position: relative;
+          margin-bottom: 2vh;
       }
       
       .dropdown-content {
@@ -64,6 +53,13 @@
       .dropdown:hover .dropdown-content {
         display: block;
       }
+      .navbar-item img {
+        width: 2vw;
+      }
+
+      .navbar-item a {
+        color: blue;
+      }
       
       .dropdown-content a {
         display: block;
@@ -74,10 +70,12 @@
         background-color: #FFFFFF;
         text-decoration: none;
       }
+
       .dropdown-content a:hover {
         color: #FFFFFF;
         background-color: #00A4BD;
       }
+
     </style>
   </head>
 
@@ -89,37 +87,37 @@
 
       <div class="navbar-center navbar-section">
 
-        <a href="http://github.com/manbradcalf" class="p-2 navbar-item">Github</a>
-        <a href="https://www.linkedin.com/in/ben-medcalf/" class="p-2 navbar-item">LinkedIn</a>
-        <a href="http://instagram.com/manbradcalf" class="p-2 navbar-item">Instagram</a>
-        <a href="mailto:ben.medcalf@gmail.com" class="p-2 navbar-item">Contact</a>
+        <a href="http://github.com/manbradcalf" class="navbar-item"><img src="https://cdn-icons-png.flaticon.com/256/25/25231.png"/></a>
+        <a href="https://www.linkedin.com/in/ben-medcalf/"class="navbar-item"><img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-linkedin-3.png"></a>
+        <a href="http://instagram.com/manbradcalf"class="navbar-item"><img  src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png"/></a>
+        <a href="mailto:ben.medcalf@gmail.com"class="navbar-item"><img src="https://icons.veryicon.com/png/o/internet--web/billion-square-cloud/mail-213.png"/></a>
 
-        <div class="p-2 dropdown navbar-item">
-          <a class="p-2">Bands</a>
+        <div class="dropdown navbar-item">
+          <a ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Bandcamp-button-bc-circle-green.svg/600px-Bandcamp-button-bc-circle-green.svg.png?20180228023713"/></a>
           <div class="dropdown-content">
-            <a href="http://buddylist.bandcamp.com" class="p-2">Buddy List</a>
-            <a href="https://youngscum.bandcamp.com" class="p-2">Young Scum</a>
+            <a href="http://buddylist.bandcamp.com" class="navbar-item" >Buddy List</a>
+            <a href="https://youngscum.bandcamp.com" class="navbar-item">Young Scum</a>
           </div>
         </div>
 
-        <div class="p-2 dropdown navbar-item">
-          <a class="p-2">Projects</a>
+        <div class="dropdown navbar-item">
+          <a ><img src="https://www.svgrepo.com/show/16272/programming-code.svg"</a>
           <div class="dropdown-content">
-            <a href="http://artiediy.org" class="p-2">Artie</a>
-            <a href="https://play.google.com/store/apps/details?id=com.bookyrself.bookyrself&pli=1" class="p-2">Artie - Android App</a>
-            <a href="" class="p-2">MTG Collection Tracker</a>
-            <a href="https://rpdtwitbot.azurewebsites.net/" class="p-2">RPD Twitter Bot</a>
+            <a class="navbar-item" href="http://artiediy.org" >Artie</a>
+            <a class="navbar-item" href="https://play.google.com/store/apps/details?id=com.bookyrself.bookyrself&pli=1" >Artie - Android App</a>
+            <a href="" >MTG Collection Tracker</a>
+            <a href="https://rpdtwitbot.azurewebsites.net/" >RPD Twitter Bot</a>
           </div>
         </div>
+
+
+    </div>
 
       <img
         src="https://avatars.githubusercontent.com/u/11594171?v=4"
         alt="Picture of Ben"
         class="img-responsive"
       />
-
-    </div>
-
   </body>
 
 </html>
