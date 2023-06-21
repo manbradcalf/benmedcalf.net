@@ -29,6 +29,27 @@
 
     <!-- TODO: Move this to its own file. Propery host static files using Oak -->
     <style>
+      @media only screen and (max-width: 700px) {
+
+        .navbar-item img {
+          width: 10vw;
+        }
+      .hero {
+         width: 90vw;
+       }
+      }
+
+      @media only screen and (min-width:701px) {
+     
+        .navbar-item img {
+          width:3vw;
+        }
+      .hero {
+         width: 50vw;
+       }
+      }
+
+
       body {
         font-family: monospace;
       }
@@ -53,9 +74,8 @@
       .dropdown:hover .dropdown-content {
         display: block;
       }
-      .navbar-item img {
-        width: 2vw;
-      }
+      
+
 
       .navbar-item a {
         color: blue;
@@ -116,7 +136,7 @@
       <img
         src="https://avatars.githubusercontent.com/u/11594171?v=4"
         alt="Picture of Ben"
-        class="img-responsive"
+        class="hero"
       />
   </body>
 
