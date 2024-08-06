@@ -7,4 +7,6 @@ Site hosted by [vultr](https://my.vultr.com/subs/?id=7bee5c4d-4a49-4b9a-9590-c72
 Domain registrar is [Squarespace](https://account.squarespace.com/) - Log in with google acct
 
 ### Updating the site
-ssh into the vultr instance and pull down latest from `main` 
+ssh into the vultr instance and pull down latest from `main`
+TODO: Need to add access. Currently `git pull` fails
+TODO: Actually just have a better method of updating the site. Maybe host on azure? idk
