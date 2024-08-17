@@ -4,7 +4,7 @@ app.http('httpTrigger1', {
     methods: ['GET'],
     authLevel: 'anonymous',
     handler: async (request, context) => {
-        context.log(`Http function processed request for request "${JSON.stringify(request)}"`);
+        context.log(`Http function processed request "${JSON.stringify(request)}"`);
 
         const name = request.query.get('name') || await request.text() || 'world';
 
