@@ -1,150 +1,72 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ben Medcalf</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ben Medcalf</title>
 
-    <!-- FAVICON -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon-16x16.png"
-    />
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
 
-    <link rel="manifest" href="site.webmanifest" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
 
-    <!-- TODO: Move this to its own file. Propery host static files using Oak -->
-    <style>
-      @media only screen and (max-width: 700px) {
-
-        .navbar-item img {
-          width: 10vw;
-          padding-inline-end: 2vw;
-        }
-      .hero {
-         width: 90vw;
-       }
-      }
-
-      @media only screen and (min-width:701px) {
-     
-        .navbar-item img {
-          width:5vw;
-          padding-inline-end: 1vw;
-        }
-
-        .hero {
-          width: 30vw;
-        }
-      }
-
-      body {
-        font-family: monospace;
-      }
-
-      .main {
-        margin-left: 2.5vw;
-        margin-right: 2.5vw;
-      }
-
-      .dropdown {
-        display: inline-block;
-        position: relative;
-          margin-bottom: 2vh;
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        width: 100%;
-      }
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      .navbar-item a {
-        color: blue;
-      }
-      
-      .dropdown-content a {
-        display: block;
-        color: #000000;
-        width: fit-content;
-        border: 1px solid;
-        border-color: black;
-        background-color: #FFFFFF;
-        text-decoration: none;
-      }
-
-      .dropdown-content a:hover {
-        color: #FFFFFF;
-        background-color: #00A4BD;
-      }
-
-    </style>
-  </head>
-
-  <!-- Google tag (gtag.js) -->
+<script>
+  fetch("/src/functions/httpTrigger1").then(console.log("we did it, now we can add appinsights"))
+</script>
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJLQ7QSFKQ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-FJLQ7QSFKQ');
 </script>
-<script>console.log("...testing testing")</script>
-  <body>
 
-    <div class="main">
+<body>
 
-      <h1>Ben Medcalf</h1>
+  <div class="main">
 
-      <div class="navbar-center navbar-section">
+    <h1>Ben Medcalf</h1>
 
-        <a href="http://github.com/manbradcalf" class="navbar-item"><img src="https://cdn-icons-png.flaticon.com/256/25/25231.png"/></a>
-        <a href="https://www.linkedin.com/in/ben-medcalf/"class="navbar-item"><img src="https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-linkedin-3.png"></a>
-        <a href="mailto:ben.medcalf@gmail.com"class="navbar-item"><img src="https://icons.veryicon.com/png/o/internet--web/billion-square-cloud/mail-213.png"/></a>
+    <div class="navbar-center navbar-section">
 
-        <div class="dropdown navbar-item">
-          <a ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Bandcamp-button-bc-circle-green.svg/600px-Bandcamp-button-bc-circle-green.svg.png?20180228023713"/></a>
-          <div class="dropdown-content">
-            <a href="http://buddylist.bandcamp.com" class="navbar-item" >Buddy List</a>
-            <a href="https://youngscum.bandcamp.com" class="navbar-item">Young Scum</a>
-          </div>
+      <a href="http://github.com/manbradcalf" class="navbar-item"><img
+          src="https://cdn-icons-png.flaticon.com/256/25/25231.png" /></a>
+      <a href="https://www.linkedin.com/in/ben-medcalf/" class="navbar-item"><img
+          src="https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-linkedin-3.png"></a>
+      <a href="mailto:ben.medcalf@gmail.com" class="navbar-item"><img
+          src="https://icons.veryicon.com/png/o/internet--web/billion-square-cloud/mail-213.png" /></a>
+
+      <div class="dropdown navbar-item">
+        <a><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Bandcamp-button-bc-circle-green.svg/600px-Bandcamp-button-bc-circle-green.svg.png?20180228023713" /></a>
+        <div class="dropdown-content">
+          <a href="http://buddylist.bandcamp.com" class="navbar-item">Buddy List</a>
+          <a href="https://youngscum.bandcamp.com" class="navbar-item">Young Scum</a>
         </div>
+      </div>
 
-        <div class="dropdown navbar-item">
-          <a ><img src="https://www.svgrepo.com/show/16272/programming-code.svg"</a>
+      <div class="dropdown navbar-item">
+        <a><img src="https://www.svgrepo.com/show/16272/programming-code.svg" </a>
           <div class="dropdown-content">
-            <a class="navbar-item" href="http://artiediy.org" >Artie</a>
-            <a class="navbar-item" href="https://play.google.com/store/apps/details?id=com.bookyrself.bookyrself&pli=1" >Artie - Android App</a>
-            <a href="" >MTG Collection Tracker</a>
-            <a href="https://rpdtwitbot.azurewebsites.net/" >RPD Twitter Bot</a>
+            <a class="navbar-item" href="http://artiediy.org">Artie</a>
+            <a class="navbar-item"
+              href="https://play.google.com/store/apps/details?id=com.bookyrself.bookyrself&pli=1">Artie - Android
+              App</a>
+            <a href="">MTG Collection Tracker</a>
+            <a href="https://rpdtwitbot.azurewebsites.net/">RPD Twitter Bot</a>
           </div>
-        </div>
+      </div>
 
     </div>
 
-      <img
-        src="https://avatars.githubusercontent.com/u/11594171?v=4"
-        alt="Picture of Ben"
-        class="hero"
-      />
-  </body>
+    <img src="https://avatars.githubusercontent.com/u/11594171?v=4" alt="Picture of Ben" class="hero" />
+</body>
+
 </html>
