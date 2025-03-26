@@ -11,12 +11,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
 
-  <link rel="manifest" href="site.webmanifest" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <script>
-  fetch("/src/functions/httpTrigger1").then(console.log("we did it, now we can add appinsights"))
+  (async function () {
+    const { text } = await (await fetch(`/api/message`)).json();
+    console.log(text)
+  }());
 </script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJLQ7QSFKQ"></script>
@@ -52,16 +54,16 @@
         </div>
       </div>
 
-      <div class="dropdown navbar-item">
-        <a><img src="https://www.svgrepo.com/show/16272/programming-code.svg" </a>
-          <div class="dropdown-content">
-            <a class="navbar-item" href="http://artiediy.org">Artie</a>
-            <a class="navbar-item"
-              href="https://play.google.com/store/apps/details?id=com.bookyrself.bookyrself&pli=1">Artie - Android
-              App</a>
-            <a href="">MTG Collection Tracker</a>
-            <a href="https://rpdtwitbot.azurewebsites.net/">RPD Twitter Bot</a>
-          </div>
+      <!-- <div class="dropdown navbar-item"> -->
+      <!--   <a><img src="https://www.svgrepo.com/show/16272/programming-code.svg" </a> -->
+      <!--     <div class="dropdown-content"> -->
+      <!--       <a class="navbar-item" href="http://artiediy.org">Artie</a> -->
+      <!--       <a class="navbar-item" -->
+      <!--         href="https://play.google.com/store/apps/details?id=com.bookyrself.bookyrself&pli=1">Artie - Android -->
+      <!--         App</a> -->
+      <!--       <a href="">MTG Collection Tracker</a> -->
+      <!--       <a href="https://rpdtwitbot.azurewebsites.net/">RPD Twitter Bot</a> -->
+      <!--     </div> -->
       </div>
 
     </div>
