@@ -1,67 +1,67 @@
 @media only screen and (max-width: 700px) {
 
-    .navbar-item img {
-        width: 10vw;
-        padding-inline-end: 2vw;
-    }
+  .navbar-item img {
+    width: 10vw;
+    padding-inline-end: 2vw;
+  }
 
-    .hero {
-        width: 90vw;
-    }
+  .hero {
+    width: 90vw;
+  }
 }
 
 @media only screen and (min-width:701px) {
 
-    .navbar-item img {
-        width: 5vw;
-        padding-inline-end: 1vw;
-    }
+  .navbar-item img {
+    width: 5vw;
+    padding-inline-end: 1vw;
+  }
 
-    .hero {
-        width: 30vw;
-    }
+  .hero {
+    width: 35vw;
+  }
 }
 
 body {
-    font-family: monospace;
+  font-family: monospace;
 }
 
 .main {
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
 }
 
 .dropdown {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 2vh;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 2vh;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    width: 100%;
+  display: none;
+  position: absolute;
+  width: 100%;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 .navbar-item a {
-    color: blue;
+  color: blue;
 }
 
 .dropdown-content a {
-    display: block;
-    color: #000000;
-    width: fit-content;
-    border: 1px solid;
-    border-color: black;
-    background-color: #FFFFFF;
-    text-decoration: none;
+  display: block;
+  color: #000000;
+  width: fit-content;
+  border: 1px solid;
+  border-color: black;
+  background-color: #FFFFFF;
+  text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    color: #FFFFFF;
-    background-color: #00A4BD;
+  color: #FFFFFF;
+  background-color: #00A4BD;
 }

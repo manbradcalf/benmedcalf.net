@@ -10,16 +10,9 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
-
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
-<script>
-  (async function () {
-    const { text } = await (await fetch(`/api/message`)).json();
-    console.log(text)
-  }());
-</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJLQ7QSFKQ"></script>
 <script>
@@ -28,6 +21,15 @@
   gtag('js', new Date());
 
   gtag('config', 'G-FJLQ7QSFKQ');
+</script>
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "sig3mpaozv");
 </script>
 
 <body>
@@ -44,7 +46,6 @@
           src="https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-linkedin-3.png"></a>
       <a href="mailto:ben.medcalf@gmail.com" class="navbar-item"><img
           src="https://icons.veryicon.com/png/o/internet--web/billion-square-cloud/mail-213.png" /></a>
-
       <div class="dropdown navbar-item">
         <a><img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Bandcamp-button-bc-circle-green.svg/600px-Bandcamp-button-bc-circle-green.svg.png?20180228023713" /></a>
@@ -53,18 +54,9 @@
           <a href="https://youngscum.bandcamp.com" class="navbar-item">Young Scum</a>
         </div>
       </div>
-
-      <!-- <div class="dropdown navbar-item"> -->
-      <!--   <a><img src="https://www.svgrepo.com/show/16272/programming-code.svg" </a> -->
-      <!--     <div class="dropdown-content"> -->
-      <!--       <a class="navbar-item" href="http://artiediy.org">Artie</a> -->
-      <!--       <a class="navbar-item" -->
-      <!--         href="https://play.google.com/store/apps/details?id=com.bookyrself.bookyrself&pli=1">Artie - Android -->
-      <!--         App</a> -->
-      <!--       <a href="">MTG Collection Tracker</a> -->
-      <!--       <a href="https://rpdtwitbot.azurewebsites.net/">RPD Twitter Bot</a> -->
-      <!--     </div> -->
-      </div>
+      <a href="https://www.medcalfsoftwaresolutions.com" class="navbar-item"><img
+          src="https://medcalfsoftwaresolutions.com/images/M%20Logo.svg" /></a>
+  </div>
 
     </div>
 
